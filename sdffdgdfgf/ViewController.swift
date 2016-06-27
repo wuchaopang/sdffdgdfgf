@@ -9,42 +9,53 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBAction func xiaoshudian1(sender: AnyObject) {
+        if(judgepoint==false)
+        {
+          xianshi.text=xianshi.text!+"."
+            judgepoint=true
+        }
+    }
     @IBAction func chufa(sender: AnyObject) {
         if flag==0
         {
-            temp = (Int)(xianshi.text!)!
+            temp = (Double)(xianshi.text!)!
             xianshi.text=""
         }
         xianshi.text=""
         flag = 4
+        judgepoint=false
         
 
     }
     @IBAction func chengfa(sender: AnyObject) {
         if flag==0
         {
-            temp = (Int)(xianshi.text!)!
+            temp = (Double)(xianshi.text!)!
             xianshi.text=""
         }
         xianshi.text=""
         flag = 3
+        judgepoint=false
         
 
     }
     @IBAction func jianfa(sender: AnyObject) {
         if flag==0
         {
-            temp = (Int)(xianshi.text!)!
+            temp = (Double)(xianshi.text!)!
             xianshi.text=""
         }
          xianshi.text=""
         flag = 2
+        judgepoint=false
         
     }
     @IBAction func chexiao(sender: AnyObject) {
         temp = 0
         xianshi.text = ""
         flag = 0
+        judgepoint=false
 
     }
     @IBAction func shuzi0(sender: AnyObject) {
@@ -69,7 +80,7 @@ class ViewController: UIViewController {
         var n:Int=0
         switch flag{
         case 1:
-            temp = temp + (Int)(xianshi.text!)!
+            temp = temp + (Double)(xianshi.text!)!
             if(temp%1==0)
             {
                n=Int(temp)
@@ -82,7 +93,7 @@ class ViewController: UIViewController {
             }
             break
         case 2:
-            temp = temp - (Int)(xianshi.text!)!
+            temp = temp - (Double)(xianshi.text!)!
             if(temp%1==0)
             {
                 n=Int(temp)
@@ -96,7 +107,7 @@ class ViewController: UIViewController {
             break
 
         case 3:
-            temp = temp * (Int)(xianshi.text!)!
+            temp = temp * (Double)(xianshi.text!)!
             if(temp%1==0)
             {
                 n=Int(temp)
@@ -111,7 +122,7 @@ class ViewController: UIViewController {
             break
 
         case 4:
-            temp = temp / (Int)(xianshi.text!)!
+            temp = temp / (Double)(xianshi.text!)!
             xianshi.text = "\(temp)"
             break
                   default:
@@ -123,7 +134,7 @@ class ViewController: UIViewController {
     @IBAction func add(sender: AnyObject) {
         if flag==0
         {
-            temp = (Int)(xianshi.text!)!
+            temp = (Double)(xianshi.text!)!
             xianshi.text=""
         }
         xianshi.text=""
@@ -150,8 +161,8 @@ class ViewController: UIViewController {
     }
     @IBOutlet weak var xianshi: UILabel!
     var flag:Int = 0
-    var temp = 0
-
+    var temp = 0.0
+    var judgepoint:Bool=false
 
     override func viewDidLoad() {
         super.viewDidLoad()

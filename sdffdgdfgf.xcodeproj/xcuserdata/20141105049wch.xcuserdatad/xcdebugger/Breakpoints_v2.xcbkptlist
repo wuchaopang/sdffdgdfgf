@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "sdffdgdfgf/ViewController.swift"
+            timestampString = "488687794.050391"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "sdffdgdfgf.ViewController.judgepoint.setter : Swift.Bool"
+                  moduleName = "sdffdgdfgf"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/20141105049wch/Desktop/sdffdgdfgf/sdffdgdfgf/ViewController.swift"
+                  timestampString = "488687633.236265"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "161"
+                  endingLineNumber = "161"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "sdffdgdfgf.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; sdffdgdfgf.ViewController"
+                  moduleName = "sdffdgdfgf"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/20141105049wch/Desktop/sdffdgdfgf/sdffdgdfgf/ViewController.swift"
+                  timestampString = "488687633.23635"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "161"
+                  endingLineNumber = "161"
+                  offsetFromSymbolStart = "172">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "sdffdgdfgf.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;sdffdgdfgf.ViewController&gt;"
+                  moduleName = "sdffdgdfgf"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/20141105049wch/Desktop/sdffdgdfgf/sdffdgdfgf/ViewController.swift"
+                  timestampString = "488687633.236428"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "161"
+                  endingLineNumber = "161"
+                  offsetFromSymbolStart = "107">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
