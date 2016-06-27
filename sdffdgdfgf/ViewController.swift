@@ -9,10 +9,78 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBAction func chufa(sender: AnyObject) {
+        if flag==0
+        {
+            temp = (Int)(xianshi.text!)!
+            xianshi.text=""
+        }
+        flag = 4
+        
+
+    }
+    @IBAction func chengfa(sender: AnyObject) {
+        if flag==0
+        {
+            temp = (Int)(xianshi.text!)!
+            xianshi.text=""
+        }
+        flag = 3
+        
+
+    }
+    @IBAction func jianfa(sender: AnyObject) {
+        if flag==0
+        {
+            temp = (Int)(xianshi.text!)!
+            xianshi.text=""
+        }
+        flag = 2
+        
+
+    }
+    @IBAction func chexiao(sender: AnyObject) {
+        temp = 0
+        xianshi.text = ""
+        flag = 0
+
+    }
+    @IBAction func shuzi0(sender: AnyObject) {
+        xianshi.text!=xianshi.text! + "\(0)"
+    }
+    @IBAction func shuzi9(sender: AnyObject) {
+        xianshi.text!=xianshi.text! + "\(9)"
+    }
+    @IBAction func shizi8(sender: AnyObject) {
+        xianshi.text!=xianshi.text! + "\(8)"
+    }
+    @IBAction func shizi7(sender: AnyObject) {
+        xianshi.text!=xianshi.text! + "\(7)"
+    }
+    @IBAction func shuzi6(sender: AnyObject) {
+        xianshi.text!=xianshi.text! + "\(6)"
+    }
+    @IBAction func shuzi5(sender: AnyObject) {
+        xianshi.text!=xianshi.text! + "\(5)"
+    }
     @IBAction func dengyu(sender: AnyObject) {
         switch flag{
         case 1:
             temp = temp + (Int)(xianshi.text!)!
+            xianshi.text = "\(temp)"
+            break
+        case 2:
+            temp = temp - (Int)(xianshi.text!)!
+            xianshi.text = "\(temp)"
+            break
+
+        case 3:
+            temp = temp * (Int)(xianshi.text!)!
+            xianshi.text = "\(temp)"
+            break
+
+        case 4:
+            temp = temp / (Int)(xianshi.text!)!
             xianshi.text = "\(temp)"
             break
         default:
