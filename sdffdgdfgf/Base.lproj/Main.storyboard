@@ -109,21 +109,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6m-Ps-gBR">
-                                <rect key="frame" x="104" y="342" width="30" height="30"/>
+                                <rect key="frame" x="257" y="232" width="30" height="30"/>
                                 <state key="normal" title="-"/>
                                 <connections>
                                     <action selector="jianfa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SDh-qE-Vt5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEf-4i-aaB">
-                                <rect key="frame" x="207" y="349" width="30" height="30"/>
-                                <state key="normal" title="*"/>
-                                <connections>
-                                    <action selector="chengfa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W0T-x4-Gmb"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d69-mU-MiK">
-                                <rect key="frame" x="28" y="342" width="30" height="30"/>
+                                <rect key="frame" x="257" y="177" width="30" height="30"/>
                                 <state key="normal" title="/"/>
                                 <connections>
                                     <action selector="chufa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QAj-L2-EpQ"/>
@@ -134,6 +127,13 @@
                                 <state key="normal" title="c"/>
                                 <connections>
                                     <action selector="chexiao:" destination="BYZ-38-t0r" eventType="touchUpInside" id="afb-zS-gkw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEf-4i-aaB">
+                                <rect key="frame" x="257" y="293" width="30" height="30"/>
+                                <state key="normal" title="*"/>
+                                <connections>
+                                    <action selector="chengfa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W0T-x4-Gmb"/>
                                 </connections>
                             </button>
                         </subviews>

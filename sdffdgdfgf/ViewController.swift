@@ -15,6 +15,7 @@ class ViewController: UIViewController {
             temp = (Int)(xianshi.text!)!
             xianshi.text=""
         }
+        xianshi.text=""
         flag = 4
         
 
@@ -25,6 +26,7 @@ class ViewController: UIViewController {
             temp = (Int)(xianshi.text!)!
             xianshi.text=""
         }
+        xianshi.text=""
         flag = 3
         
 
@@ -35,9 +37,9 @@ class ViewController: UIViewController {
             temp = (Int)(xianshi.text!)!
             xianshi.text=""
         }
+         xianshi.text=""
         flag = 2
         
-
     }
     @IBAction func chexiao(sender: AnyObject) {
         temp = 0
@@ -64,30 +66,59 @@ class ViewController: UIViewController {
         xianshi.text!=xianshi.text! + "\(5)"
     }
     @IBAction func dengyu(sender: AnyObject) {
+        var n:Int=0
         switch flag{
         case 1:
             temp = temp + (Int)(xianshi.text!)!
+            if(temp%1==0)
+            {
+               n=Int(temp)
+            xianshi.text = "\(n)"
+
+            }
+            else
+            {
             xianshi.text = "\(temp)"
+            }
             break
         case 2:
             temp = temp - (Int)(xianshi.text!)!
-            xianshi.text = "\(temp)"
+            if(temp%1==0)
+            {
+                n=Int(temp)
+                xianshi.text = "\(n)"
+                
+            }
+            else
+            {
+                xianshi.text = "\(temp)"
+            }
             break
 
         case 3:
             temp = temp * (Int)(xianshi.text!)!
-            xianshi.text = "\(temp)"
+            if(temp%1==0)
+            {
+                n=Int(temp)
+                xianshi.text = "\(n)"
+                
+            }
+            else
+            {
+                xianshi.text = "\(temp)"
+            }
+
             break
 
         case 4:
             temp = temp / (Int)(xianshi.text!)!
             xianshi.text = "\(temp)"
             break
-        default:
-            break
-            
+                  default:
+        break
         
-    }
+        }
+
     }
     @IBAction func add(sender: AnyObject) {
         if flag==0
@@ -95,6 +126,7 @@ class ViewController: UIViewController {
             temp = (Int)(xianshi.text!)!
             xianshi.text=""
         }
+        xianshi.text=""
         flag = 1
 
 
