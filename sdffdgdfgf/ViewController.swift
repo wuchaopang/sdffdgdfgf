@@ -9,6 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBAction func tuige(sender: AnyObject) {
+        var w=xianshi.text!
+        if(w != "")
+        {
+           w.removeAtIndex(w.endIndex.predecessor())
+            xianshi.text=w
+        }
+        else{
+        xianshi.text="0"
+        }
+    }
     @IBAction func fuhao(sender: AnyObject) {
         if(judgepoint==false)
         {
