@@ -9,6 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBAction func baifenhao(sender: AnyObject) {
+        if flag==0
+        {
+            temp = (Double)(xianshi.text!)!
+            xianshi.text=""
+        }
+        xianshi.text=""
+        flag = 5
+        judgepoint=false
+        
+
+    }
     @IBAction func tuige(sender: AnyObject) {
         var w=xianshi.text!
         if(w != "")
@@ -79,21 +91,27 @@ class ViewController: UIViewController {
     }
     @IBAction func shuzi0(sender: AnyObject) {
         xianshi.text!=xianshi.text! + "\(0)"
+        judgepoint=false
     }
     @IBAction func shuzi9(sender: AnyObject) {
         xianshi.text!=xianshi.text! + "\(9)"
+         judgepoint=false
     }
     @IBAction func shizi8(sender: AnyObject) {
         xianshi.text!=xianshi.text! + "\(8)"
+        judgepoint=false
     }
     @IBAction func shizi7(sender: AnyObject) {
         xianshi.text!=xianshi.text! + "\(7)"
+        judgepoint=false
     }
     @IBAction func shuzi6(sender: AnyObject) {
         xianshi.text!=xianshi.text! + "\(6)"
+        judgepoint=false
     }
     @IBAction func shuzi5(sender: AnyObject) {
         xianshi.text!=xianshi.text! + "\(5)"
+        judgepoint=false
     }
     @IBAction func dengyu(sender: AnyObject) {
         var n:Int=0
@@ -110,6 +128,7 @@ class ViewController: UIViewController {
             {
             xianshi.text = "\(temp)"
             }
+             judgepoint=false
             break
         case 2:
             temp = temp - (Double)(xianshi.text!)!
@@ -144,6 +163,11 @@ class ViewController: UIViewController {
             temp = temp / (Double)(xianshi.text!)!
             xianshi.text = "\(temp)"
             break
+        case 5:
+            temp = temp / 100
+             xianshi.text = "\(temp)"
+                        break
+
                   default:
         break
         
@@ -163,19 +187,23 @@ class ViewController: UIViewController {
     }
     @IBAction func shuzi4(sender: AnyObject) {
         xianshi.text!=xianshi.text! + "\(4)"
+        judgepoint=false
 
     }
    
     @IBAction func shuzi3(sender: AnyObject) {
         xianshi.text!=xianshi.text! + "\(3)"
+        judgepoint=false
 
     }
     @IBAction func shuzi2(sender: AnyObject) {
         xianshi.text!=xianshi.text! + "\(2)"
+        judgepoint=false
 
     }
     @IBAction func shizi1(sender: AnyObject) {
         xianshi.text!=xianshi.text! + "\(1)"
+        judgepoint=false
 
     }
     @IBOutlet weak var xianshi: UILabel!

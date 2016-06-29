@@ -154,11 +154,18 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpo-qJ-TKg">
-                                <rect key="frame" x="126" y="101" width="43" height="30"/>
+                                <rect key="frame" x="98" y="101" width="43" height="30"/>
                                 <state key="normal" title="delete"/>
                                 <connections>
                                     <action selector="dengyu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vbT-Tq-4SG"/>
                                     <action selector="tuige:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KN9-gU-3u7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UjH-PB-znO">
+                                <rect key="frame" x="177" y="101" width="30" height="30"/>
+                                <state key="normal" title="％"/>
+                                <connections>
+                                    <action selector="baifenhao:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jDK-Eo-38m"/>
                                 </connections>
                             </button>
                         </subviews>
