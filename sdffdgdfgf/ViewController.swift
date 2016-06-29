@@ -9,6 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBAction func fuhao(sender: AnyObject) {
+        if(judgepoint==false)
+        {
+            xianshi.text=xianshi.text!+"-"
+            judgepoint=true
+        }
+
+    }
     @IBAction func xiaoshudian1(sender: AnyObject) {
         if(judgepoint==false)
         {
